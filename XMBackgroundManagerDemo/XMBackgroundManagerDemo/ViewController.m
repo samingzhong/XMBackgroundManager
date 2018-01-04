@@ -3,7 +3,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BViewController.h"
 @interface ViewController ()
 
 @end
@@ -12,9 +12,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)presentVCB:(id)sender {
+    [self presentViewController:[BViewController new] animated:NO completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

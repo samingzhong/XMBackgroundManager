@@ -13,7 +13,21 @@
 		33AE5FD11FFCD2D900DD39B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AE5FD01FFCD2D900DD39B6 /* Assets.xcassets */; };
 		33AE5FD41FFCD2D900DD39B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AE5FD21FFCD2D900DD39B6 /* LaunchScreen.storyboard */; };
 		33AE5FD71FFCD2D900DD39B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE5FD61FFCD2D900DD39B6 /* main.m */; };
+		33AE60021FFCDB5B00DD39B6 /* libXMBackgroundManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AE60031FFCDB5B00DD39B6 /* libXMBackgroundManager.a */; };
+		33AE60121FFCEE2800DD39B6 /* wechat_pay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33AE60101FFCEE2800DD39B6 /* wechat_pay@2x.png */; };
+		33AE60161FFDDAC000DD39B6 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE60141FFDDAC000DD39B6 /* BViewController.m */; };
+		33AE60171FFDDAC000DD39B6 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AE60151FFDDAC000DD39B6 /* BViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33AE60091FFCDC6C00DD39B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33AE60051FFCDC6C00DD39B6 /* XMBackgroundManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33AE5FEC1FFCD43200DD39B6;
+			remoteInfo = XMBackgroundManager;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		33AE5FC41FFCD2D900DD39B6 /* XMBackgroundManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMBackgroundManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,7 +40,12 @@
 		33AE5FD31FFCD2D900DD39B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AE5FD51FFCD2D900DD39B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AE5FD61FFCD2D900DD39B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		33AE5FF81FFCD44600DD39B6 /* XMBackgroundManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = XMBackgroundManager.xcodeproj; sourceTree = "<group>"; };
+		33AE60031FFCDB5B00DD39B6 /* libXMBackgroundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libXMBackgroundManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AE60051FFCDC6C00DD39B6 /* XMBackgroundManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XMBackgroundManager.xcodeproj; path = ../XMBackgroundManager/XMBackgroundManager.xcodeproj; sourceTree = "<group>"; };
+		33AE60101FFCEE2800DD39B6 /* wechat_pay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wechat_pay@2x.png"; sourceTree = "<group>"; };
+		33AE60131FFDDAC000DD39B6 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		33AE60141FFDDAC000DD39B6 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		33AE60151FFDDAC000DD39B6 /* BViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AE60021FFCDB5B00DD39B6 /* libXMBackgroundManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,9 +63,10 @@
 		33AE5FBB1FFCD2D900DD39B6 = {
 			isa = PBXGroup;
 			children = (
-				33AE5FF81FFCD44600DD39B6 /* XMBackgroundManager.xcodeproj */,
+				33AE60051FFCDC6C00DD39B6 /* XMBackgroundManager.xcodeproj */,
 				33AE5FC61FFCD2D900DD39B6 /* XMBackgroundManagerDemo */,
 				33AE5FC51FFCD2D900DD39B6 /* Products */,
+				33AE60011FFCDB5B00DD39B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +81,14 @@
 		33AE5FC61FFCD2D900DD39B6 /* XMBackgroundManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				33AE60101FFCEE2800DD39B6 /* wechat_pay@2x.png */,
 				33AE5FC71FFCD2D900DD39B6 /* AppDelegate.h */,
 				33AE5FC81FFCD2D900DD39B6 /* AppDelegate.m */,
 				33AE5FCA1FFCD2D900DD39B6 /* ViewController.h */,
 				33AE5FCB1FFCD2D900DD39B6 /* ViewController.m */,
+				33AE60131FFDDAC000DD39B6 /* BViewController.h */,
+				33AE60141FFDDAC000DD39B6 /* BViewController.m */,
+				33AE60151FFDDAC000DD39B6 /* BViewController.xib */,
 				33AE5FCD1FFCD2D900DD39B6 /* Main.storyboard */,
 				33AE5FD01FFCD2D900DD39B6 /* Assets.xcassets */,
 				33AE5FD21FFCD2D900DD39B6 /* LaunchScreen.storyboard */,
@@ -71,6 +96,22 @@
 				33AE5FD61FFCD2D900DD39B6 /* main.m */,
 			);
 			path = XMBackgroundManagerDemo;
+			sourceTree = "<group>";
+		};
+		33AE60011FFCDB5B00DD39B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33AE60031FFCDB5B00DD39B6 /* libXMBackgroundManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33AE60061FFCDC6C00DD39B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33AE600A1FFCDC6C00DD39B6 /* libXMBackgroundManager.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +160,12 @@
 			mainGroup = 33AE5FBB1FFCD2D900DD39B6;
 			productRefGroup = 33AE5FC51FFCD2D900DD39B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33AE60061FFCDC6C00DD39B6 /* Products */;
+					ProjectRef = 33AE60051FFCDC6C00DD39B6 /* XMBackgroundManager.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				33AE5FC31FFCD2D900DD39B6 /* XMBackgroundManagerDemo */,
@@ -126,11 +173,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		33AE600A1FFCDC6C00DD39B6 /* libXMBackgroundManager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXMBackgroundManager.a;
+			remoteRef = 33AE60091FFCDC6C00DD39B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		33AE5FC21FFCD2D900DD39B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AE60171FFDDAC000DD39B6 /* BViewController.xib in Resources */,
+				33AE60121FFCEE2800DD39B6 /* wechat_pay@2x.png in Resources */,
 				33AE5FD41FFCD2D900DD39B6 /* LaunchScreen.storyboard in Resources */,
 				33AE5FD11FFCD2D900DD39B6 /* Assets.xcassets in Resources */,
 				33AE5FCF1FFCD2D900DD39B6 /* Main.storyboard in Resources */,
@@ -145,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AE5FCC1FFCD2D900DD39B6 /* ViewController.m in Sources */,
+				33AE60161FFDDAC000DD39B6 /* BViewController.m in Sources */,
 				33AE5FD71FFCD2D900DD39B6 /* main.m in Sources */,
 				33AE5FC91FFCD2D900DD39B6 /* AppDelegate.m in Sources */,
 			);

@@ -3,6 +3,9 @@
 //
 
 #import "AppDelegate.h"
+#import <XMBackgroundManager/XMBackgroundManager.h>
+#import "ViewController.h"
+#import "BViewController.h"
 
 @interface AppDelegate ()
 
@@ -13,6 +16,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [XMBackgroundManager setBackgroundImagesforViewControllerClasses:@{@"BViewController" : [UIImage imageNamed:@"wechat_pay"]}];
     return YES;
 }
 
@@ -41,6 +46,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskAll;
 }
 
 
